@@ -46,8 +46,8 @@ function addTicket() {
     ticket.appendChild(button);
 }
 function checkForm(form){
-    var reg = /^((https?|ftp)\:\/\/)?([a-z0-9]{1})((\.[a-z0-9-])|([a-z0-9-]))*\.([a-z]{2,4})(\/?)/$ ;
-    if (document.getElementById('url').value=="" || document.getElementById('url').value != reg) {
+    // var reg = /^((https?|ftp)\:\/\/)?([a-z0-9]{1})((\.[a-z0-9-])|([a-z0-9-]))*\.([a-z]{2,4})(\/?)/$ ;
+    if (document.getElementById('url').value=="") {
         alert('wrong url name');
         return false;
     } else{
